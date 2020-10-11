@@ -1,0 +1,144 @@
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 100
+Please enter the ending meter value 200
+Please enter the customer's code: r
+
+The customer's code is r
+The customer's meter reading at the beginning of the month was 000000100
+The customer's meter reading at the ending of the month was 000000200
+The amount of water the customer used is 10.0 gallons
+The customer is being billed for $15.01
+ ^C
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 1234567893
+Please type 9-digit code
+: Success
+exit status 157
+ ^C
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 123456789
+Please enter the ending meter value 1234567899
+Please type 9-digit code
+: Success
+exit status 157
+ ^C
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 999900005
+Please enter the ending meter value 999900004
+Please enter the customer's code: j
+Only c,i,r lowercase for customer code: Success
+exit status 157
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 123 
+Please enter the ending meter value 456
+Please enter the customer's code: 789
+exit status 157
+Only c,i,r lowercase for customer code: Success
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 999999996
+Please enter the ending meter value 000000005
+Please enter the customer's code: r
+
+The customer's code is r
+The customer's meter reading at the beginning of the month was 999999996
+The customer's meter reading at the ending of the month was 000000005
+The amount of water the customer used is 0.9 gallons
+The customer is being billed for $15.00
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 999999992
+Please enter the ending meter value 000000009
+Please enter the customer's code: i
+
+The customer's code is i
+The customer's meter reading at the beginning of the month was 999999992
+The customer's meter reading at the ending of the month was 000000009
+The amount of water the customer used is 1.7 gallons
+The customer is being billed for $1000.00
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 999000001
+Please enter the ending meter value 999099996
+Please enter the customer's code: c
+
+The customer's code is c
+The customer's meter reading at the beginning of the month was 999000001
+The customer's meter reading at the ending of the month was 999099996
+The amount of water the customer used is 9999.0 gallons
+The customer is being billed for $1000.20
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 444000012
+Please enter the ending meter value 444000965
+Please enter the customer's code: r
+
+The customer's code is r
+The customer's meter reading at the beginning of the month was 444000012
+The customer's meter reading at the ending of the month was 444000965
+The amount of water the customer used is 95.0 gallons
+The customer is being billed for $15.05
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 444000123
+Please enter the ending meter value 444000456
+Please enter the customer's code: c
+
+The customer's code is c
+The customer's meter reading at the beginning of the month was 444000123
+The customer's meter reading at the ending of the month was 444000456
+The amount of water the customer used is 33.0 gallons
+The customer is being billed for $1000.00
+ 
+
+
+ clang-7 -pthread -lm -o main lab4.c main.c
+ ./main
+Please enter the beginning meter value 444000369
+Please enter the ending meter value 444000963
+Please enter the customer's code: i
+
+The customer's code is i
+The customer's meter reading at the beginning of the month was 444000369
+The customer's meter reading at the ending of the month was 444000963
+The amount of water the customer used is 59.0 gallons
+The customer is being billed for $2000.00
+ 
+
+
+
+
+
+

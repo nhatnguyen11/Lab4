@@ -12,8 +12,19 @@ int readMeterValue(char * str)
 
   printf("Please enter the %s meter value ", str );
   scanf("%d",&value);
-
+ 
   while(fgetc(stdin) != '\n'){}
+
+  if (value <= 999999999)
+  {
+    return value;
+    
+  }
+  else 
+  {
+    perror("Please type 9-digit code\n");
+    exit(-99);
+  }
 
   return value;
 }
@@ -38,7 +49,7 @@ char readCustomerCode()
   }
   else 
   {
-    perror("Only c,i,r lowercase for Customer Code");
+    perror("Only c,i,r lowercase for customer code");
     exit(-99);
   }
   return customerCode;
