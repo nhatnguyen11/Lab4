@@ -31,25 +31,25 @@ int readMeterValue(char * str)
 
 char readCustomerCode()
 {
-  char c,i,r,customerCode;
+  char c, C,i,I,r,R,customerCode;
   printf("Please enter the customer's code: ");
   scanf("%c",&customerCode);
 
-  if (customerCode == 'c')
+  if (customerCode == 'c' || customerCode == 'C')
   {
     printf("\nThe customer's code is c\n");
   }
-  else if (customerCode == 'i')
+  else if (customerCode == 'i' || customerCode == 'I')
   {
     printf("\nThe customer's code is i\n");
   }
-  else if (customerCode == 'r')
+  else if (customerCode == 'r' || customerCode == 'R')
   {
     printf("\nThe customer's code is r\n");
   }
   else 
   {
-    perror("Only c,i,r lowercase for customer code");
+    perror("Only c,i,r or C,I,R for customer code");
     exit(-99);
   }
   return customerCode;
@@ -84,18 +84,18 @@ double determineUsage(int begMeterValue,int endMeterValue)
 double determineCost(double usage, char customerCode)
 {
   double cost;
-  if (customerCode == 'r')
+  if (customerCode == 'r' || customerCode == 'R')
   {
     cost= 15.00 + (0.0005*usage);
     return cost;
 
   }
-  else if (customerCode == 'c')
+  else if (customerCode == 'c' || customerCode == 'C')
   {
     cost= 1000.00 + (0.00002*usage);
     return cost;
   }
-  else if (customerCode == 'i')
+  else if (customerCode == 'i' || customerCode == 'I')
   {
     if (usage <= 4*(10^6))
     {
